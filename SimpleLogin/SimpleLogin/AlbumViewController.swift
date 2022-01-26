@@ -10,6 +10,7 @@ import UIKit
 class AlbumViewController: UIViewController {
     
     let albumVM = AlbumViewModel()
+    let coredataManager = CoreDataManager()
 //    let baseUrl
     
     @IBOutlet weak var albumTableView: UITableView!
@@ -39,7 +40,7 @@ extension AlbumViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         cell.cellLabel.text = "\(albumVM.albums[indexPath.row].albumId) - \(albumVM.albums[indexPath.row].title)"
-         var url = albumVM.albums[indexPath.row].url
+        var url = albumVM.albums[indexPath.row].thumbnailUrl
         cell.cellImageView.downloaded(from: url)
         return cell
     }

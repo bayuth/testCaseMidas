@@ -24,10 +24,11 @@ class AdminViewController: UIViewController {
         
         let nib = UINib(nibName: "UserTableViewCell", bundle: nil)
         userTableView.register(nib, forCellReuseIdentifier: "UserTableViewCell")
-        coredataManager.addUser(id: 1, username: "joe", password: "12345", email: "joe@gmail.com", role: "user")
+        fetchUser()
+//        coredataManager.addUser(id: 1, username: "joe", password: "12345", email: "joe@gmail.com", role: "user")
     }
     
-    func fetchUser(tableView: UITableView){
+    func fetchUser(){
         do{
             self.result = try context.fetch(UserTable.fetchRequest())
             DispatchQueue.main.async {

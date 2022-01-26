@@ -55,7 +55,7 @@
 		75E55AD627A0FB3B00E0A77A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		75E55AD927A0FBE600E0A77A /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		75E55ADB27A0FD3400E0A77A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		75E55ADD27A1067200E0A77A /* UserTable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserTable+CoreDataProperties.swift"; path = "SimpleLogin/UserTable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		75E55ADD27A1067200E0A77A /* UserTable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserTable+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 		75E55A9127A0E86700E0A77A = {
 			isa = PBXGroup;
 			children = (
-				75E55ADD27A1067200E0A77A /* UserTable+CoreDataProperties.swift */,
 				75E55A9C27A0E86700E0A77A /* SimpleLogin */,
 				75E55A9B27A0E86700E0A77A /* Products */,
 			);
@@ -90,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				75E55ACB27A0F9BB00E0A77A /* UserTable+CoreDataClass.swift */,
+				75E55ADD27A1067200E0A77A /* UserTable+CoreDataProperties.swift */,
 				75E55AC627A0F81C00E0A77A /* SimpleLogin.xcdatamodeld */,
 				75E55AB127A0E8D900E0A77A /* Model.swift */,
 				75E55A9D27A0E86700E0A77A /* AppDelegate.swift */,
