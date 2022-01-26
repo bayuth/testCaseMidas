@@ -38,6 +38,11 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(album, animated: true)
         coredataManager.addUser(id: 1, username: "usernameTF", password: "passwordTF", email: "joe@gmail.com", role: "user", isLogin: true)
     }
+    @IBAction func adminBtn(_ sender: Any) {
+        let albumStoryboard = UIStoryboard(name: "Admin", bundle: nil)
+        let album = albumStoryboard.instantiateViewController(withIdentifier: "AdminViewController") as! AdminViewController
+        self.navigationController?.pushViewController(album, animated: true)
+    }
     
 }
 

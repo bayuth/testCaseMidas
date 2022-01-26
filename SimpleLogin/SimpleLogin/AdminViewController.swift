@@ -53,6 +53,9 @@ extension AdminViewController: UITableViewDelegate, UITableViewDataSource{
         cell.userNameLabel.text = result[indexPath.row].username
         return cell
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt: IndexPath){
+        self.coredataManager.deleteUser(currentUser: result[indexPath.row])
+    }
     
     
 }
