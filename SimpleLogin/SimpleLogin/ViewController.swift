@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        coredataManager.addUser(id: 1, username: "joe", password: "12345", email: "joe@gmail.com", role: "user")
+        coredataManager.addUser(id: 1, username: "joe", password: "12345", email: "joe@gmail.com", role: "user", isLogin: false)
 //        coredataManager.addUser(id: 2, username: "max", password: "12345", email: "max@gmail.com", role: "user")
     }
 
